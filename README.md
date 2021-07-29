@@ -1,7 +1,7 @@
 # Dice-Roll-React-App
 
-Application for rolling dice based on user input 
+Application for rolling dice in which user faces computer as the opponent and in addition to that it can determine style of play. 
 
 # Dice Roll Link: 
 
-Built with: React, React Router, React Bootstrap, Redux
+Built with: React, React Router, React Bootstrap, Redux (Redux Toolkit), Emotion, React Confetti, React Use, React UUID, etc....
