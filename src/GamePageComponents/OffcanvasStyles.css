@@ -1,0 +1,38 @@
+.rotate-scale-dice {
+  animation: rotateScale 0.65s linear both;
+  -webkit-animation: rotateScale 0.65s linear both;
+}
+
+@keyframes rotateScale {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+    transform: scale(0.5) rotateZ(180deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes rotateScale {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+    transform: scale(0.5) rotateZ(180deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
