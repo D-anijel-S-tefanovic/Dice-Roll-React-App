@@ -1,6 +1,9 @@
 /** @jsxRuntime classic **/
 /** @jsx jsx **/
 
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import InputGroup from "react-bootstrap/InputGroup";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -123,23 +126,44 @@ export default function ModalComponent(props) {
       </Modal.Body>
 
       <Modal.Footer id="modal-footer-element" css={modalStyle}>
-        <Button
-          id="button-element-1"
-          type="button"
-          size="lg"
-          onClick={props.handleCloseButton}
-        >
-          Undo Changes
-        </Button>
-
-        <Button
-          id="button-element-2"
-          type="button"
-          size="lg"
-          onClick={props.handleSaveButton}
-        >
-          Save Changes
-        </Button>
+        <Container fluid>
+          <Row className="d-flex justify-content-center">
+            <Col
+              xs={6}
+              sm={6}
+              md={6}
+              lg={6}
+              xl={6}
+              className="d-flex justify-content-center"
+            >
+              <Button
+                id="button-element-1"
+                type="button"
+                size="lg"
+                onClick={props.handleCloseButton}
+              >
+                Undo Changes
+              </Button>
+            </Col>
+            <Col
+              xs={6}
+              sm={6}
+              md={6}
+              lg={6}
+              xl={6}
+              className="d-flex justify-content-center"
+            >
+              <Button
+                id="button-element-2"
+                type="button"
+                size="lg"
+                onClick={props.handleSaveButton}
+              >
+                Save Changes
+              </Button>
+            </Col>
+          </Row>
+        </Container>
       </Modal.Footer>
     </Modal>
   );
